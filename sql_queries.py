@@ -35,7 +35,7 @@ song_id varchar primary key,
 title varchar, 
 artist_id varchar, 
 year varchar, 
-duration varchar)
+duration float)
 """)
 
 artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists (
