@@ -64,7 +64,7 @@ def process_log_file(cur, filepath):
     for index, row in df.iterrows():
         
         
-        cur.execute(song_select, (row.song, row.artist, row.length))
+        cur.execute(song_select, (row.song, row.length, row.artist ))
         results = cur.fetchone()
         
         if results:
