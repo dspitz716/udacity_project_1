@@ -56,8 +56,9 @@ conn.set_session(autocommit=True)`
 Note: `conn.set_session(autocommit=True)` ensures that we do not need to commit the session for every action in the notebook.
 
 ### Creation of databases
-run this script to drop and recreate the tables before running any tests in the 
-`!python create_tables.py`
+`!python create_tables.py` 
+run this script to drop and recreate the tables before running any tests in the notebook
+
 
 ### populate tables with data
 `! python etl.py`
